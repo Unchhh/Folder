@@ -12,19 +12,5 @@
 
 mac = 'AAAA:BBBB:CCCC'
 #Решение
-mac = mac.replace(':','')
-a = '{}{}{}{}{}{}{}{}{}{}{}{}'.format(
-(bin(int(mac[0],16))[2:]),
-(bin(int(mac[1],16))[2:]),
-(bin(int(mac[2],16))[2:]),
-(bin(int(mac[3],16))[2:]),
-(bin(int(mac[4],16))[2:]),
-(bin(int(mac[5],16))[2:]),
-(bin(int(mac[6],16))[2:]),
-(bin(int(mac[7],16))[2:]),
-(bin(int(mac[8],16))[2:]),
-(bin(int(mac[9],16))[2:]),
-(bin(int(mac[10],16))[2:]),
-(bin(int(mac[11],16))[2:]),
-)
+a= bin(int(mac.replace(':',''),16))[2:]
 print (a)
