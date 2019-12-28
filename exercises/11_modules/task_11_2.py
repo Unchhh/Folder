@@ -42,6 +42,7 @@ Cгенерировать топологию, которая соответст�
 '''
 #Решение
 from draw_network_graph import draw_topology
+
 def create_network_map (filenames):
 	ans,ans1={},{}
 	for files in filenames:
